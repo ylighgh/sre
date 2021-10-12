@@ -2,8 +2,8 @@
 vendor/
 .bundle/
 Gemfile.lock
-тс╪г.html
-тс╪г.pdf
+*.html
+*.pdf
 *_build.sh
 /images/
 release_github_io.sh
