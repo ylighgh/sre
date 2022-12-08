@@ -9,7 +9,7 @@ GEM_BIN=$GEM_HOME/bin
 export GEM_PATH=$GEM_PATH:$GEM_HOME
 export PATH=$PATH:$GEM_BIN
 
-rm -f 杂记.pdf
+rm -f sre.pdf
 rm -f images/*
 rm -rf .asciidoctor/
 
