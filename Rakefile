@@ -10,14 +10,7 @@ namespace :book do
   desc 'build basic html book'
   task :build_html => :prebuild do
     puts "Converting to HTML..."
-    `bundle exec asciidoctor -r asciidoctor-diagram seia.asc -o sre.html`
+    `bundle exec asciidoctor seia.asc -o sre.html`
     puts " -- HTML output at sre.html"
-  end
-
-  desc 'build basic pdf book'
-  task :build_pdf => :prebuild do
-    puts "Converting to PDF... (this one takes a while)"
-    `bundle exec asciidoctor-pdf -r asciidoctor-diagram -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-style=resources/CN-theme.yml -a pdf-fontsdir=resources/fonts seia.asc -o sre.pdf --trace`
-    puts " -- PDF  output at sre.pdf"
   end
 end
